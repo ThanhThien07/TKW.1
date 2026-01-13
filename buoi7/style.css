@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f8;
+}
+
+/* HEADER */
+.header{
+    background:linear-gradient(90deg,#2962ff,#1e40af);
+    color:#fff;
+    text-align:center;
+    padding:40px 0;
+}
+
+.header p{
+    margin-top:5px;
+    font-size:14px;
+}
+
+/* MENU */
+.menu{
+    background:#fff;
+    text-align:center;
+    padding:10px 0;
+    border-bottom:1px solid #ddd;
+}
+
+.menu a{
+    margin:0 15px;
+    text-decoration:none;
+    color:#2962ff;
+    font-size:14px;
+}
+
+/* CONTAINER */
+.container{
+    width:80%;
+    margin:30px auto;
+}
+
+/* SECTION */
+section{
+    margin-bottom:40px;
+}
+
+h2{
+    margin-bottom:20px;
+}
+
+/* COURSES */
+.courses{
+    display:flex;
+    gap:20px;
+}
+
+.course{
+    background:#fff;
+    padding:20px;
+    flex:1;
+    border-radius:6px;
+}
+
+.course span{
+    display:block;
+    margin-top:10px;
+    color:#2962ff;
+    font-weight:bold;
+}
+
+/* TABLE */
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+}
+
+th{
+    background:#2962ff;
+    color:#fff;
+    padding:10px;
+}
+
+td{
+    padding:10px;
+    border-bottom:1px solid #ddd;
+    text-align:center;
+}
+
+/* FORM */
+form{
+    background:#fff;
+    padding:20px;
+    border-radius:6px;
+}
+
+input, select{
+    width:100%;
+    padding:10px;
+    margin-bottom:10px;
+    border:1px solid #ccc;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    background:#2962ff;
+    color:#fff;
+    border:none;
+}
+
+/* FOOTER */
+footer{
+    background:#1f2937;
+    color:#fff;
+    text-align:center;
+    padding:10px;
+    font-size:13px;
+}
