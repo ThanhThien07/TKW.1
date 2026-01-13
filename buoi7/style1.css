@@ -15,11 +15,11 @@ body{
 }
 .header p{
     margin-top: 5px;
-    font-size: 14px;
+    font-size: 15px;
 }
 .title{
     border-left: #2d65ff 5px solid;
-    padding-left: 10px;
+    padding-left: 5px;
 }
 .menu ul{
     display: flex;
@@ -43,6 +43,9 @@ body{
 .container{
     width: 60%;
     margin: 40px auto;
+}
+.container h2{
+    margin-bottom: 10px;
 }
 .card-wrapper{
     display: flex;
@@ -72,6 +75,7 @@ section th{
     color: white;
     text-align: center;
     border: 1px solid #ccc;
+    padding: 10px;
 }
 section td{
     padding: 10px;
