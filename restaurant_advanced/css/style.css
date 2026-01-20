@@ -1,0 +1,234 @@
+body {
+    --primary: #8b5a2b;
+    --secondary: #5a3a1a;
+    --light: #ffffff;
+    --bg: #f3f3f3;
+    --text: #333;
+    --shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.header {
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    color: var(--light);
+    text-align: center;
+    padding: 30px 0;
+}
+
+.menu {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background: #fff;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 12px 0;
+}
+
+.menu a {
+    display: block;
+    padding: 8px 16px;
+
+    color: #8b5a2b;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 6px;
+
+    transition: background 0.3s, color 0.3s;
+}
+
+.menu a:hover {
+    background: var(--secondary);
+    color: #fff;
+}
+
+.title{
+    border-left: var(--primary) 5px solid;
+    padding-left: 5px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    background-color: #e3e3e3;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 30px;
+    background: var(--primary);
+    color: var(--light);
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--secondary);
+    
+}
+
+.container {
+    width: 1100px;
+    margin: auto;
+}
+
+.card-list {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    width: 100%;
+    background: var(--light);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    position: relative;
+    transition: transform 0.3s;
+
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: var(--light);
+    padding: 4px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    color: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 12px;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--light);
+    box-shadow: var(--shadow);
+}
+
+th {
+    background: var(--primary);
+    color: var(--light);
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background: #eee;
+}
+
+.review-list {
+    display: flex;
+    gap: 20px;
+}
+
+.review {
+    width: 100%;
+    background: var(--light);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.booking-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    background: var(--light);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    margin: 20px 0;
+}
+
+.booking-form textarea,
+.booking-form button {
+    grid-column: span 2;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+    border-color: var(--primary);
+    outline: none;
+}
+
+.booking-form button {
+    background: var(--primary);
+    color: var(--light);
+    border: none;
+    padding: 12px;
+    border-radius: 30px;
+}
+
+.footer {
+    background: var(--secondary);
+    color: var(--light);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer a {
+    color: var(--light);
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #b77130 ;
+    text-decoration: underline;
+}

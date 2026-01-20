@@ -1,102 +1,107 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>IT Academy</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOLDEN SPOON</title>
 </head>
+<link rel="stylesheet" href="style.css">
 <body>
-
-<!-- HEADER -->
-<header class="header">
-    <h1>IT ACADEMY</h1>
-    <p>Learn today – Lead tomorrow</p>
-</header>
-
-<!-- MENU -->
-<nav class="menu">
-    <a href="#">Trang chủ</a>
-    <a href="#">Khóa học</a>
-    <a href="#">Giới thiệu</a>
-    <a href="#">Đăng ký</a>
-</nav>
-
-<div class="container">
-
-<!-- KHÓA HỌC -->
-<section>
-    <h2>Khóa học nổi bật</h2>
-    <div class="courses">
-        <div class="course">
-            <h3>HTML & CSS</h3>
-            <p>Thiết kế website từ cơ bản đến nâng cao.</p>
-            <span>2.000.000đ</span>
+    <header class="header">
+        <h1>GOLDEN SPOON</h1>
+        <p>Ẩm thực tinh hoa - Trải nghiệm đẳng cấp</p>
+        <nav>
+            <a href="#">Trang chủ</a>
+            <a href="#">Ưu đãi</a>
+            <a href="#">Thực đơn</a>
+            <a href="#">Đặt bàn</a>
+        </nav>
+    </header>
+    <section class="banner">
+        <h2>Trải nghiệm ẩm thực đỉnh cao</h2>
+        <p>Không gian sang trọng - Món ăn tinh tế - Phục vụ chuyên nghiệp</p>
+        <button>Đặt bàn ngay</button>
+    </section>
+    <section class="section">
+        <h2>Món ăn nổi bật</h2>
+        <div class="khoa">
+            <div class="menu">
+                <span class="tag">Best Seller</span>
+                <h3>Bò bít tết sốt tiêu</h3>
+                <p>Thịt bò nhập khẩu,mềm mọng,đậm vị.</p>
+                <span class="gia">350.000đ</span>
+            </div>
+            <div class="menu">
+                <h3>Cá hồi áp chảo</h3>
+                <p>Cá hồi NaUy,ăn kèm rau củ tươi.</p>
+                <span class="gia">320.000đ</span>
+            </div>
+            <div class="menu">
+                <h3>Mỳ ý hải sản</h3>
+                <p>Sốt cà chua đặc trưng,hải sản tươi sống.</p>
+                <span class="gia">280.000đ</span>
+            </div>
         </div>
-
-        <div class="course">
-            <h3>JavaScript</h3>
-            <p>Lập trình tương tác web hiện đại.</p>
-            <span>2.500.000đ</span>
+    </section>
+    <section class="section">
+        <h2>Combo ưu đãi</h2>
+        <table>
+            <tr>
+                <th>Tên combo</th>
+                <th>Món chính</th>
+                <th>Giá</th>
+            </tr>
+            <tr>
+                <td>Combo Couple</td>
+                <td>Bò bít tết + Mì ý</td>
+                <td>550.000đ</td>
+            </tr>
+            <tr>
+                <td>Combo Family</td>
+                <td>Cá hồi + Mì ý + Salad</td>
+                <td>780.000đ</td>
+            </tr>
+            <tr>
+                <td>Combo VIP</td>
+                <td>Steak + Cá hồi + Rượu vang</td>
+                <td>1.200.000đ</td>
+            </tr>
+        </table>
+    </section>
+    <section class="section">
+        <h2>Khách hàng nói gì?</h2>
+        <div class="menus">
+            <div class="menu">
+            <h3>Nguyễn Văn A</h3>
+            <p>★★★★★</p>
+            <p>Món ăn rất ngon, không gian sang trọng.</p>
+            </div>
+            <div class="menu">
+            <h3>Trần Thị B</h3>
+            <p>★★★★★</p>
+            <p>Phục vụ chuyên nghiệp, sẽ quay lại lần sau.</p>
+            </div>
         </div>
-
-        <div class="course">
-            <h3>PHP & MySQL</h3>
-            <p>Xây dựng website động chuyên nghiệp.</p>
-            <span>3.000.000đ</span>
-        </div>
-    </div>
-</section>
-
-<!-- BẢNG HỌC PHÍ -->
-<section>
-    <h2>Bảng học phí</h2>
-    <table>
-        <tr>
-            <th>Khóa học</th>
-            <th>Thời lượng</th>
-            <th>Học phí</th>
-        </tr>
-        <tr>
-            <td>HTML & CSS</td>
-            <td>2 tháng</td>
-            <td>2.000.000đ</td>
-        </tr>
-        <tr>
-            <td>JavaScript</td>
-            <td>2.5 tháng</td>
-            <td>2.500.000đ</td>
-        </tr>
-        <tr>
-            <td>PHP & MySQL</td>
-            <td>3 tháng</td>
-            <td>3.000.000đ</td>
-        </tr>
-    </table>
-</section>
-
-<!-- FORM -->
-<section>
-    <h2>Đăng ký tư vấn</h2>
-    <form>
+    </section>
+    <section class="section">
+        <h2> Đặt bàn</h2>
+        <form class="form">
         <input type="text" placeholder="Họ và tên">
-        <input type="email" placeholder="Email">
+        <input type="tel" placeholder="Số điện thoại">
+        <input type="date">
         <select>
-            <option>Chọn khóa học</option>
-            <option>HTML & CSS</option>
-            <option>JavaScript</option>
-            <option>PHP & MySQL</option>
+            <option>Số người</option>
+            <option>1-3</option>
+            <option>4-6</option>
+            <option>Trên 6</option>
         </select>
-        <input type="text" placeholder="Ghi chú">
-        <button>Gửi đăng ký</button>
+        <textarea placeholder="Ghi chú thêm"></textarea>
+        <button>Xác nhận đặt bàn</button>
     </form>
-</section>
-
-</div>
-
-<!-- FOOTER -->
-<footer>
-    © 2026 IT Academy
-</footer>
-
+    <footer>
+           <p> 123 Nguyễn Văn Cừ</p><br>
+           <p>SĐT 0901234567  /  10:00-22:00</p><br>
+           <a href="#top" class="back-top">↑ Về đầu trang</a>
+    </footer>
 </body>
 </html>
