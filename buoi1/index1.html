@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - NGUYỄN HOÀNG HƯNG</title>
+    <style>
+        /* Reset và cài đặt chung */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Container chính */
+        .cv-container {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Header với tên và thông tin liên hệ */
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #4a6491);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .name {
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .title {
+            font-size: 1.3rem;
+            font-weight: 300;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.95rem;
+        }
+
+        /* Nội dung chính 2 cột */
+        .main-content {
+            display: flex;
+            padding: 30px;
+            gap: 40px;
+        }
+
+        .left-column {
+            flex: 1;
+        }
+
+        .right-column {
+            flex: 1.5;
+        }
+
+        /* Các section */
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            color: #2c3e50;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #4a6491;
+            font-weight: 600;
+        }
+
+        /* Mục trong từng section */
+        .item {
+            margin-bottom: 20px;
+        }
+
+        .item-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .item-subtitle {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .item-date {
+            color: #4a6491;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+        }
+
+        .item-description {
+            font-size: 0.95rem;
+        }
+
+        /* Kỹ năng */
+        .skill-item {
+            margin-bottom: 12px;
+        }
+
+        .skill-name {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .skill-bar {
+            height: 8px;
+            background-color: #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .skill-level {
+            height: 100%;
+            background-color: #4a6491;
+            border-radius: 4px;
+        }
+
+        /* Nút thêm trang */
+        .add-page {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px dashed #ccc;
+            margin-top: 20px;
+        }
+
+        .add-page-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: #f1f5f9;
+            color: #4a6491;
+            border: 1px solid #4a6491;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .add-page-btn:hover {
+            background-color: #4a6491;
+            color: white;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 0.85rem;
+            color: #777;
+            border-top: 1px solid #eee;
+            background-color: #f9f9f9;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 15px;
+                align-items: center;
+            }
+            
+            .name {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="cv-container">
+        <div class="header">
+            <h1 class="name">NGUYỄN HOÀNG HƯNG</h1>
+            <p class="title">Chuyên viên Phát triển Phần mềm</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+84 123 456 789</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>hung.nguyen@email.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Hà Nội, Việt Nam</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <span>linkedin.com/in/hoanghung</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="left-column">
+                <div class="section">
+                    <h2 class="section-title">MỤC TIÊU NGHỀ NGHIỆP</h2>
+                    <p class="item-description">Chuyên viên phần mềm với 5+ năm kinh nghiệm, mong muốn ứng tuyển vị trí Lập trình viên Fullstack tại công ty công nghệ hàng đầu. Hướng đến việc phát triển các giải pháp công nghệ tối ưu và đóng góp vào sự phát triển của công ty.</p>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">KỸ NĂNG</h2>
+                    <div class="skill-item">
+                        <span class="skill-name">JavaScript/TypeScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">React & Node.js</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Python/Django</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Quản lý cơ sở dữ liệu</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Giao tiếp & Làm việc nhóm</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">NGÔN NGỮ</h2>
+                    <div class="item">
+                        <div class="item-title">Tiếng Việt</div>
+                        <p class="item-description">Ngôn ngữ mẹ đẻ</p>
+                    </div>
+                    <div class="item">
+                        <div class="item-title">Tiếng Anh</div>
+                        <p class="item-description">Thành thạo (TOEIC 850)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="section">
+                    <h2 class="section-title">KINH NGHIỆM LÀM VIỆC</h2>
+                    <div class="item">
+                        <div class="item-title">Lập trình viên Fullstack</div>
+                        <div class="item-subtitle">Công ty Công nghệ TechVision</div>
+                        <div class="item-date">03/2020 - Hiện tại</div>
+                        <ul class="item-description" style="padding-left: 20px;">
+                            <li>Phát triển và duy trì 10+ ứng dụng web bằng React và Node.js</li>
+                            <li>Tối ưu hiệu suất ứng dụng, cải thiện tốc độ tải trang 40%</li>
+                            <li>Phối hợp với nhóm thiết kế và sản phẩm để triển khai tính năng mới</li>
+                            <li>Hỗ trợ đào tạo 3 thực tập sinh mới</li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <div class="item-title">Lập trình viên Frontend</div>
+                        <div class="item-subtitle">Công ty Phần mềm Innovate</div>
+                        <div class="item-date">06/2018 - 02/2020</div>
+                        <ul class="item-description" style="padding-left: 20px;">
+                            <li>Xây dựng giao diện người dùng cho hệ thống quản lý nội bộ</li>
+                            <li>Phát triển thành phần tái sử dụng được, giảm thời gian phát triển 25%</li>
+                            <li>Tham gia code review và đảm bảo chất lượng mã nguồn</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">HỌC VẤN</h2>
+                    <div class="item">
+                        <div class="item-title">Đại học Bách Khoa Hà Nội</div>
+                        <div class="item-subtitle">Kỹ sư Công nghệ Thông tin</div>
+                        <div class="item-date">2014 - 2018</div>
+                        <p class="item-description">Tốt nghiệp loại Giỏi (GPA: 3.6/4.0)</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">DỰ ÁN TIÊU BIỂU</h2>
+                    <div class="item">
+                        <div class="item-title">Hệ thống Quản lý Khách hàng CRM</div>
+                        <p class="item-description">Dẫn đầu nhóm 4 người phát triển hệ thống CRM cho doanh nghiệp vừa và nhỏ. Công nghệ: React, Node.js, MongoDB.</p>
+                    </div>
+                    <div class="item">
+                        <div class="item-title">Ứng dụng Đặt lịch hẹn trực tuyến</div>
+                        <p class="item-description">Phát triển ứng dụng cho phép người dùng đặt lịch hẹn với chuyên gia. Đã có 5000+ người dùng đăng ký.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="add-page">
+            <a href="#" class="add-page-btn">
+                <i class="fas fa-plus"></i>
+                <span>Thêm trang</span>
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>CV được cập nhật lần cuối: Tháng 10/2023</p>
+        </div>
+    </div>
+</body>
+</html>
