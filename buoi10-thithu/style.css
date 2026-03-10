@@ -1,0 +1,98 @@
+body {
+    background: #f6f7fb;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* HERO */
+.hero-section {
+    background: #eef2f7;
+}
+
+.hero-image-wrapper {
+    background: #1c1c1c;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.hero-img {
+    max-height: 350px;
+}
+
+/* FEATURES */
+.feature-item {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    background: #eef2f7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 24px;
+    color: #0d6efd;
+    margin-bottom: 15px;
+}
+
+/* PRODUCTS */
+.product-card {
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    position: relative;
+}
+
+.sale-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.product-card img {
+    height: 200px;
+    object-fit: contain;
+}
+
+/* BANNERS */
+.promo-banner {
+    background: #dde3ec;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.promo-banner.dark {
+    background: #1c1c1c;
+    color: white;
+}
+
+/* FOOTER */
+.footer {
+    background: #f8f9fa;
+    text-align: left;
+    color: gray;
+}
+
+i {
+    font-size: 24px;
+    color: gray;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+}
+
+.right {
+    display: flex;
+}
+
+.right img {
+    height: 20px;
+    object-fit: contain;
+}
